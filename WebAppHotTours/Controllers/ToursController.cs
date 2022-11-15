@@ -10,10 +10,6 @@ namespace WebAppHotTours.Controllers
     [Route("[controller]")]
     public class ToursController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
         private static readonly IList<Tour> tours = new List<Tour>();
 
         private readonly ILogger<ToursController> _logger;
